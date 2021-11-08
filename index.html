@@ -7,31 +7,35 @@
         <!-- <link rel="stylesheet" href=""> -->
     </head>
     <body>
-        <aside>
+        <!-- The sidebar navigation, with the photo of the artist -->
+        <!-- this will be made into a component after I finish this dashboard. -->
+        <aside id="sidebar">
             <figure>
-                <img>
-                <figcaption></figcaption>
+                <img id="artistImage">
+                <figcaption id="artistName"></figcaption>
             </figure>
-            <nav>
+            <nav id="navMenu">
                 <ul>
-                    <li>
+                    <li id="metricPath" class="urlLink">
                         Metrics
                     </li>
-                    <li>
+                    <li id="musicPath" class="urlLink">
                         Music
                     </li>
-                    <li>
+                    <li id="searchPath" class="urlLink">
                         Search Artist
                     </li>
                 </ul>
             </nav>
         </aside>
+        <!-- The featured content. Either the metrics, Music or Search bar for artist. -->
+        <!-- After finishing the dashboard, instead of copying and pasting parts into other linked HTML pages, I will make a template of this. -->
         <main>
-            <div>
-                <!-- Metrics/Music and Profile -->
-                <p>My Metrics</p>
-                <div>
-                    <div>
+            <div id="contentArea">
+                <!-- Metrics/Music and Search -->
+                <p id="pathTitle">My Metrics</p>
+                <div id="filterSection">
+                    <div id="filterDate" class="filterOption">
                         <label for="date">Date<Date/label>
                         <input id="date" type="date" name="until-date"></input>
                     </div>
@@ -43,23 +47,23 @@
                         <label></label>
                         <select></select>
                     </div> -->
-                    <button>Filter</button>
+                    <button id="filterButton">Filter</button>
                 </div>
-                <div>
-                    <div>
+                <div id="monthlyWeeklyListenersSection">
+                    <div id="monthlyListenersSection">
                         <p>monthly listeners <span id="month"></span></p>
                         <div id="monthlyListeners"></div>
                         <div id="percentageChange"></div>
                     </div>
-                    <div>
+                    <div id="weeklyListenersSection">
                         <p>weekly listeners <span id="year"></span></p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div id="profileVisitsAndMostPopularSection">
+                    <div id="weeklyProfileVisitsSection">
                         <p>weekly profile visitors</p>
                     </div>
-                    <div>
+                    <div id="mostPopularSongsSection">
                         <p>most popular <span id="month"></span></p>
                     </div>
                 </div>
