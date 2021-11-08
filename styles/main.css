@@ -166,6 +166,7 @@ nav > ul {
         transform: translateY(16px);
       }
       #pathTitle {
+          width: 100%;
           align-self: center;
       }
 }
