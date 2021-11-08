@@ -165,4 +165,7 @@ nav > ul {
       .menu-button__burger::after {
         transform: translateY(16px);
       }
+      #pathTitle {
+          align-self: center;
+      }
 }
