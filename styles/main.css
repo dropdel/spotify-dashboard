@@ -35,12 +35,12 @@ nav > ul {
     flex-direction: column;
     align-items: flex-start;
     background-color: #121212;
-    color: rgb(26, 255, 128);
+    color: rgb(5, 255, 117);
     height: inherit;
 }
 #sidebar img {
     border-radius: 100%;
-    box-shadow: 0px 0px 15px 5px #1db954;
+    box-shadow: 0px 0px 10px 5px #1db954;
 }
 #sidebar figure {
     text-align: center;
@@ -54,13 +54,26 @@ nav > ul {
 }
 /* End Major Sections */
 
+/* Artist Name */
+#artistName {
+    color: #00FF7F;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Hamburger Menu */
+.menu-button {
+    display: none;
+}
+
 /* Link section */
 .selected {
     border-left: 7px solid rgb(26, 255, 128);
+    background-color:rgb(26, 255, 128, 0.1);
+    font-weight: bold;
 }
 .urlLink {
     cursor: pointer;
-    background-color:rgb(26, 255, 128, 0.1);
     width: 100%;
     text-align: center;
     margin-top: 15px;
@@ -72,4 +85,52 @@ nav > ul {
 }
 .urlLink:hover {
     background-color: rgb(26, 255, 128, 0.3)
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    .menu-button {
+        position: fixed;
+        z-index: 4;
+        left: 10px;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: 8px;
+        background-color: black;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+      .menu-button__burger {
+        width: 30px;
+        height: 4px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.5s ease-in-out;
+      }
+      .menu-button__burger::before,
+      .menu-button__burger::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.5s ease-in-out;
+      }
+      .menu-button__burger::before {
+        transform: translateY(-16px);
+      }
+      .menu-button__burger::after {
+        transform: translateY(16px);
+      }
 }
