@@ -4,19 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify Dashboard</title>
-        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="./styles/main.css">
     </head>
     <body>
         <!-- The sidebar navigation, with the photo of the artist -->
         <!-- this will be made into a component after I finish this dashboard. -->
         <aside id="sidebar">
             <figure>
-                <img id="artistImage">
-                <figcaption id="artistName"></figcaption>
+                <img id="artistImage" src="assets/artist.jpg" alt="artist's professional photo." height="200" width="200">
+                <!-- replace artist's dynamically, in order to keep with basic accessability standards. -->
+                <figcaption id="artistName">Anon Nymous</figcaption>
             </figure>
-            <nav id="navMenu">
+            <nav>
                 <ul>
-                    <li id="metricPath" class="urlLink">
+                    <li id="metricPath" class="urlLink selected">
                         Metrics
                     </li>
                     <li id="musicPath" class="urlLink">
