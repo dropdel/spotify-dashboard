@@ -54,11 +54,43 @@ nav > ul {
 }
 /* End Major Sections */
 
+/* Minor sections */
+#filterSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#monthlyWeeklyListenersSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#profileVisitsAndMostPopularSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+/*  */
+
+
 /* Artist Name */
 #artistName {
     color: #00FF7F;
     font-weight: bold;
     margin-top: 15px;
+}
+
+/* Title of Path */
+#pathTitle {
+    align-self: flex-start;
+    /* After 768px, align center */
+    padding-left: 40px;
+    color: #12b362;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 /* Hamburger Menu */
