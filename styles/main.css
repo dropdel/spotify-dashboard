@@ -141,17 +141,17 @@ Misc. Classes
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 31px;
+        height: 31px;
         border-radius: 100%;
-        padding: 8px;
+        padding: 10px;
         background-color: black;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
       }
       .menu-button__burger {
-        width: 30px;
-        height: 4px;
+        width: 24px;
+        height: 1px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -161,8 +161,8 @@ Misc. Classes
       .menu-button__burger::after {
         content: "";
         position: absolute;
-        width: 30px;
-        height: 4px;
+        width: 24px;
+        height: 1px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
