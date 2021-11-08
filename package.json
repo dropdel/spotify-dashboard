@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dropdel/spotify-dashboard/issues"
   },
-  "homepage": "https://github.com/dropdel/spotify-dashboard#readme"
+  "homepage": "https://github.com/dropdel/spotify-dashboard#readme",
+  "dependencies": {
+    "chart.js": "^3.6.0"
+  }
 }

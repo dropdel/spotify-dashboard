@@ -36,7 +36,7 @@ nav > ul {
     align-items: flex-start;
     background-color: #121212;
     color: rgb(5, 255, 117);
-    height: inherit;
+    height: 100%;
 }
 #sidebar img {
     border-radius: 100%;
@@ -58,6 +58,7 @@ nav > ul {
 #filterSection {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -72,6 +73,13 @@ nav > ul {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+}
+#mostPopularSongsSection > ol{
+    width: 100%;
+}
+#mostPopularSongsSection > ol li {
+    display: flex;
+    justify-content: space-between;
 }
 /*  */
 
@@ -117,6 +125,26 @@ nav > ul {
 }
 .urlLink:hover {
     background-color: rgb(26, 255, 128, 0.3)
+}
+/* Filter button */
+#filterButton {
+    border: none;
+    padding: 10px 20px 10px 20px;
+    background-color:rgb(5, 255, 117);
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+#filterButton:hover {
+    color: white;
+}
+
+/*  */
+/* Monthly listeners number */
+#monthlyListeners {
+    font-size: 50px;
 }
 
 /* 
