@@ -151,7 +151,7 @@ Misc. Classes
       }
       .menu-button__burger {
         width: 24px;
-        height: 1px;
+        height: 2px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -162,17 +162,17 @@ Misc. Classes
         content: "";
         position: absolute;
         width: 24px;
-        height: 1px;
+        height: 2px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
         transition: all 0.5s ease-in-out;
       }
       .menu-button__burger::before {
-        transform: translateY(-16px);
+        transform: translateY(-13px);
       }
       .menu-button__burger::after {
-        transform: translateY(16px);
+        transform: translateY(13px);
       }
       #pathTitle {
           width: 100%;
